@@ -5,18 +5,17 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './componentEu/home-page/home-page.component';
 import { AboutMeComponent } from './componentEu/about-me/about-me.component';
 import { LatestBlogPostComponent } from './componentEu/latest-blog-post/latest-blog-post.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     AboutMeComponent,
-    LatestBlogPostComponent
+    LatestBlogPostComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,1 +1,15 @@
 <p>latest-blog-post works!</p>
+
+<h2>{{ post.titlu }}</h2>
+
+<h5 *ngIf="isAutor()">{{ post.autor }}</h5>
+
+<p>Cititi articolul cu numarul: {{ post.id }}</p>
+
+<!-- titlul - sa fie afisat cu ajutorul unui h2
+autor - afisat sub titlu cu ajutorul unui h5, in cazul in care face parte din instanta din Post. 
+In cazul in care nu este prezent in instanta, nu se va afisa nimic.
+id-ul sa faca parte dintr-un paragraf cu urmatorul format (Cititi articolul cu numarul: <id>)
+continutul sa fie de asemenea implementat cu un tag de tip p.
+
+Afisarea instantelor de post trebuie sa se faca folosind structurile de control for si if. -->
