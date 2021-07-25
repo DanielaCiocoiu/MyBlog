@@ -1,0 +1,10 @@
+<p>home-page works!</p>
+
+<button (click)="switchComponent()">Switch context</button>
+<div *ngIf="latestBlogPost; else about_me">
+  <app-latest-blog-post></app-latest-blog-post>
+</div>
+
+<ng-template #about_me>
+  <app-about-me></app-about-me>
+</ng-template>
