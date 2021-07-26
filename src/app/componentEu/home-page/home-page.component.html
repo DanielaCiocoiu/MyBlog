@@ -1,10 +1,20 @@
-<p>home-page works!</p>
+<div class="card">
+  <div class="card-header"><h1>Welcome to my blog</h1></div>
+  <p>Home-page</p>
 
-<button (click)="switchComponent()">Switch context</button>
-<div *ngIf="latestBlogPost; else about_me">
-  <app-latest-blog-post></app-latest-blog-post>
+  <div>
+    <button class="btn btn-primary" type="button" (click)="switchComponent()">
+      Switch context
+    </button>
+  </div>
+  <br />
+  <div *ngIf="latestBlogPost; else about_me">
+    <app-latest-blog-post></app-latest-blog-post>
+  </div>
+
+  <br />
+
+  <ng-template #about_me>
+    <app-about-me></app-about-me>
+  </ng-template>
 </div>
-
-<ng-template #about_me>
-  <app-about-me></app-about-me>
-</ng-template>
